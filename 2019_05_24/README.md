@@ -24,7 +24,7 @@ ar rcs libfun.a libfun.o
 gcc -c basico.c -o basico.o
 ```
 
-- En un paso anterior se generó el archivo ```libfun.a``` . Ahora el codigo objeto ```basico.o``` con la librería ```libfun.a``` .
+- En un paso anterior se generó el archivo ```libfun.a``` . Ahora enlazaremos el codigo objeto ```basico.o``` con la librería ```libfun.a``` .
 
 ```
 gcc -o basico basico.o -L. -libfun.a
