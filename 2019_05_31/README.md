@@ -1,11 +1,9 @@
 # Clase 2019_05_31
 
-En la clase de hoy se ejecutarán los programas que se mostraron en los videos. A continuación se mostrará como se compila cada uno de esos codigos.
+Los siguientes son los códigos de calentamiento que presentan como usar los archivos de cabecera en proyectos de programación en C.
 
-## cpu.c
+* [entero.h](entero.h)
 
-## mem.c
+* [principal.h](principal.h)
 
-## threads.c
 
-## io.c
