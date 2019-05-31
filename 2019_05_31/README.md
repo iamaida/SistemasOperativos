@@ -4,6 +4,6 @@ Los siguientes son los códigos de calentamiento que presentan como usar los arc
 
 * [entero.h](entero.h)
 
-* [principal.h](principal.h)
+* [principal.c](principal.c)
 
 
