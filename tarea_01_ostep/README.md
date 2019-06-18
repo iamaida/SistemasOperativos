@@ -21,3 +21,14 @@ gcc mem.c -o mem && ./mem “ ”
 ```
 
 Durante la ejecución del comando anterior a cada proceso se le asigna una dirección de memoria diferente. Para conseguir que los procesos apunten a la misma dirección de memoria se debe deshabilitar la asignación dinamica de direcciones de memoria.
+
+* Desactivación asignación dinamica de direcciones de memoria
+```
+sudo sh -c "echo 0> /proc/sys/kernel/randomize_va_space"
+```
+* Ejecución de dos programas mem.c de manera concurrente (apuntan a la misma dirección de memoria)
+```
+./mem “ ”& ./mem “”&
+
+```
+### Programas auxiliares: El programa [mem.c](mem.c) hace uso de la libreria [common.h](common.h).
