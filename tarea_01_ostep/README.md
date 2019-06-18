@@ -22,11 +22,11 @@ gcc mem.c -o mem && ./mem “ ”
 
 Durante la ejecución del comando anterior a cada proceso se le asigna una dirección de memoria diferente. Para conseguir que los procesos apunten a la misma dirección de memoria se debe deshabilitar la asignación dinamica de direcciones de memoria.
 
-* Desactivación asignación dinamica de direcciones de memoria
+* Desactivación asignación dinamica de direcciones de memoria [[link fuente]](https://superuser.com/questions/127238/how-to-turn-off-aslr-in-ubuntu-9-10/127240)
+
 ```
 sudo sh -c "echo 0> /proc/sys/kernel/randomize_va_space"
 ```
-[Fuente](https://superuser.com/questions/127238/how-to-turn-off-aslr-in-ubuntu-9-10/127240)
 
 * Ejecución de dos programas mem.c de manera concurrente (apuntan a la misma dirección de memoria)
 ```
