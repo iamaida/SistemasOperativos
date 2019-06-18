@@ -11,5 +11,5 @@ La actividad permitio evidenciar el proceso de virtualización de memoria, por m
 
 ### Procedimiento
 
-* Compilación del programa [mem.c](mem.c).
+** Compilación del programa [mem.c](mem.c).
 
