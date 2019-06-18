@@ -11,7 +11,12 @@ La actividad permitio evidenciar el proceso de virtualización de memoria, por m
 
 ### Procedimiento
 
-* Compilación y ejecución del programa [mem.c](mem.c)
+* Compilación y ejecución del programa [mem.c](mem.c).
 ```
 gcc mem.c -o mem && ./mem “ ”
 ```
+* Ejecución de dos programas [mem.c](mem.c) de manera concurrente.
+```
+./mem “ ”& ./mem “”&
+
+Durante la ejecución del comando anterior a cada proceso se le asigna una dirección de memoria diferente. Para conseguir que los procesos apunten a la misma dirección de memoria se debe deshabilitar la asignación dinamica de direcciones de memoria.
