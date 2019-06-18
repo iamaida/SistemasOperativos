@@ -26,9 +26,12 @@ Durante la ejecución del comando anterior a cada proceso se le asigna una direc
 ```
 sudo sh -c "echo 0> /proc/sys/kernel/randomize_va_space"
 ```
+[Fuente](https://superuser.com/questions/127238/how-to-turn-off-aslr-in-ubuntu-9-10/127240)
+
 * Ejecución de dos programas mem.c de manera concurrente (apuntan a la misma dirección de memoria)
 ```
 ./mem “ ”& ./mem “”&
 
 ```
-### Programas auxiliares: El programa [mem.c](mem.c) hace uso de la libreria [common.h](common.h).
+### Programas auxiliares: 
+El programa [mem.c](mem.c) hace uso de la libreria [common.h](common.h).
