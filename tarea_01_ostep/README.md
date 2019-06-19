@@ -5,7 +5,7 @@ La tarea tiene como propósito poner en prática diversas habilidades que deben 
 ## Desarrollo de actividades
 
 
-* [mem.c](### mem.c)
+* ### [mem.c](mem.c)
 
 La actividad permitio evidenciar el proceso de virtualización de memoria, por medio de la ejecución de dos procesos concurrentes que, aparentemente, modifican de manera independiente, el valor una variable que se encuentra en la misma dirección de memoria. Lo anterior pone de manifiesto que cada proceso cuenta con su propio espacio privado de memoria virtual asignado por el Sistema Operativo.  
 
