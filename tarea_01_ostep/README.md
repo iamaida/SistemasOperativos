@@ -59,8 +59,8 @@ Durante la ejecución del comando anterior se observa como a pesar de que value 
 ### Programas auxiliares: 
 El programa [threads.c](threads.c) hace uso de las librerias:
 
-[mycommon.h](mycommon.h)
-[common.h](common.h)
-[common_threads.h] (common_threads.h).
+* [mycommon.h](mycommon.h)
+* [common.h](common.h)
+* [common_threads.h] (common_threads.h).
 
 
