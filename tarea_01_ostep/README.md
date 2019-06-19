@@ -48,7 +48,7 @@ gcc threads.c -o threads -lpthread  && ./threads  value
 ```
 Durante la ejecución del comando anterior se observa que con value tomando valores pequeños el programa funciona correctamente, sin embargo cuando value es grande los resultados empiezan a ser irregulares.
 
-Para solventar dicho problema se propuso hacer uso de los mecanismos de sincronización Mutex, especificados en la libreria [my_common.h](my_common.h).
+Para solventar dicho problema se propuso hacer uso de los mecanismos de sincronización Mutex, especificados en la libreria [mycommon.h](mycommon.h).
   
 * Compilación y ejecución del programa [threads.c](threads.c) tras hacer uso de la libreria [mycommon.h](mycommon.h) para implementar una puerta que sincronize el acceso de los hilos a la variable. 
 ```
