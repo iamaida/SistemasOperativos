@@ -67,7 +67,7 @@ La actividad permitio imprimir el contenido del archivo plano [texto.txt](texto.
 
 El programa [io.c](io.c) hace uso de la libreria estatica [function.h](function.h), la cual implementa la función que imprime de manera invertida el contenido del archivo.
 
-* Generación de la libreria estatica [function.c](function.c):
+* Generación de la libreria estatica
 ```
 gcc -c function.c
 ar rc libfunction.a function.o
