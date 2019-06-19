@@ -36,7 +36,7 @@ sudo sh -c "echo 0> /proc/sys/kernel/randomize_va_space"
 ##### Programas auxiliares: 
 El programa [mem.c](mem.c) hace uso de la libreria [common.h](common.h).
 
-### [threads.c](threads.c)
+* ### [threads.c](threads.c)
 
 La actividad permitio evidenciar los problemas asociados al acceso de una variable de manera concurrente por parte de dos hilos de  ejecución. 
 
@@ -59,7 +59,7 @@ Durante la ejecución del comando anterior se observa como a pesar de que value 
 ##### Programas auxiliares: 
 El programa [threads.c](threads.c) hace uso de las librerias [mycommon.h](mycommon.h), [common.h](common.h) y [common_threads.h](common_threads.h)
 
-### [io.c](io.c)
+* ### [io.c](io.c)
 
 La actividad permitio imprimir el contenido del archivo plano [texto.txt](texto.txt) al reves. 
 
