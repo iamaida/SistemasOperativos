@@ -50,17 +50,13 @@ Durante la ejecución del comando anterior se observa que con value tomando valo
 
 Para solventar dicho problema se propuso hacer uso de los mecanismos de sincronización Mutex, especificados en la libreria [my_common.h](my_common.h).
   
-* Compilación y ejecución del programa [threads.c](threads.c) tras hacer uso de la libreria [my_common.h](my_common.h) para implementar una puerta que sincronize el acceso de los hilos a la variable. 
+* Compilación y ejecución del programa [threads.c](threads.c) tras hacer uso de la libreria [mycommon.h](mycommon.h) para implementar una puerta que sincronize el acceso de los hilos a la variable. 
 ```
 gcc threads.c -o threads -lpthread  && ./threads  value
 ```
 Durante la ejecución del comando anterior se observa como a pesar de que value toma valores my grandes el resultado no presenta irregularidades.
 
 ### Programas auxiliares: 
-El programa [threads.c](threads.c) hace uso de las librerias:
-
-* [mycommon.h](mycommon.h)
-* [common.h](common.h)
-* [common_threads.h] (common_threads.h).
+El programa [threads.c](threads.c) hace uso de las librerias [mycommon.h](mycommon.h), [common.h](common.h) y [common_threads.h](common_threads.h)
 
 
