@@ -46,7 +46,7 @@ La actividad permitio evidenciar los problemas asociados al acceso de una variab
 ```
 gcc threads.c -o threads -lpthread  && ./threads  value
 ```
-Durante la ejecución del comando anterior se observa que con value tomando valores pequeños el programa funciona correctamente, sin embargo cuando value es grande los resultados empiezan a ser irregulares.
+Durante la ejecución del comando anterior se observa que con value tomando valores pequeños el programa funciona correctamente, sin embargo cuando value toma valores grandes los resultados empiezan a tornarse irregulares.
 
 Para solventar dicho problema se propuso hacer uso de los mecanismos de sincronización Mutex, especificados en la libreria [mycommon.h](mycommon.h).
   
@@ -58,5 +58,32 @@ Durante la ejecución del comando anterior se observa como a pesar de que value 
 
 ### Programas auxiliares: 
 El programa [threads.c](threads.c) hace uso de las librerias [mycommon.h](mycommon.h), [common.h](common.h) y [common_threads.h](common_threads.h)
+
+* [io.c](io.c)
+
+La actividad permitio imprimir el contenido del archivo plano [texto.txt](texto.txt) al reves. 
+
+### Procedimiento
+
+El programa [io.c](io.c) hace uso de la libreria estatica [function.h](function.h), la cual implementa la función que imprime de manera invertida el contenido del archivo.
+
+* Generación de la libreria estatica [function.c](function.c):
+```
+gcc -c function.c
+ar rc libfunction.a function.o
+```
+* Compilar programa usando la nueva libreria:
+```
+gcc -o io -L. io.c -lfunction
+```
+
+* Ejecución del programa [io.c](io.c), donde file_name es el nombre del archivo
+```
+./io "file_name"
+```
+Tras la ejecución del comando se imprime de forma invertida en pantalla el contenido de file_name.
+
+### Programas auxiliares: 
+El programa [function.c](function.c) hace uso de la libreria [function.h](function.h).
 
 
