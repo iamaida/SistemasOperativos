@@ -84,6 +84,6 @@ gcc -o io -L. io.c -lfunction
 Tras la ejecución del comando se imprime de forma invertida en pantalla el contenido de file_name.
 
 ##### Programas auxiliares: 
-El programa [function.c](function.c) hace uso de la libreria [function.h](function.h).
+El programa [io.c](io.c) hace uso de la libreria [function.c](function.c).
 
 
