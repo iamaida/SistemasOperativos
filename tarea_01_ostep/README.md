@@ -57,6 +57,9 @@ gcc threads.c -o threads -lpthread  && ./threads  value
 Durante la ejecución del comando anterior se observa como a pesar de que value toma valores my grandes el resultado no presenta irregularidades.
 
 ### Programas auxiliares: 
-El programa [threads.c](threads.c) hace uso de la libreria [mycommon.h](mycommon.h), [common.h](common.h) , [common_threads.h] (common_threads.h).
+El programa [threads.c](threads.c) hace uso de las librerias:
+[mycommon.h](mycommon.h)
+[common.h](common.h)
+[common_threads.h] (common_threads.h).
 
 
