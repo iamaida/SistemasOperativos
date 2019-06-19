@@ -33,14 +33,14 @@ sudo sh -c "echo 0> /proc/sys/kernel/randomize_va_space"
 ./mem “ ”& ./mem “”&
 
 ```
-### Programas auxiliares: 
+##### Programas auxiliares: 
 El programa [mem.c](mem.c) hace uso de la libreria [common.h](common.h).
 
-* [threads.c](threads.c)
+### [threads.c](threads.c)
 
 La actividad permitio evidenciar los problemas asociados al acceso de una variable de manera concurrente por parte de dos hilos de  ejecución. 
 
-### Procedimiento
+#### Procedimiento
 
 * Compilación y ejecución del programa [threads.c](threads.c). Donde value es un número
 ```
@@ -56,14 +56,14 @@ gcc threads.c -o threads -lpthread  && ./threads  value
 ```
 Durante la ejecución del comando anterior se observa como a pesar de que value toma valores my grandes el resultado no presenta irregularidades.
 
-### Programas auxiliares: 
+##### Programas auxiliares: 
 El programa [threads.c](threads.c) hace uso de las librerias [mycommon.h](mycommon.h), [common.h](common.h) y [common_threads.h](common_threads.h)
 
-* [io.c](io.c)
+### [io.c](io.c)
 
 La actividad permitio imprimir el contenido del archivo plano [texto.txt](texto.txt) al reves. 
 
-### Procedimiento
+#### Procedimiento
 
 El programa [io.c](io.c) hace uso de la libreria estatica [function.h](function.h), la cual implementa la función que imprime de manera invertida el contenido del archivo.
 
@@ -83,7 +83,7 @@ gcc -o io -L. io.c -lfunction
 ```
 Tras la ejecución del comando se imprime de forma invertida en pantalla el contenido de file_name.
 
-### Programas auxiliares: 
+##### Programas auxiliares: 
 El programa [function.c](function.c) hace uso de la libreria [function.h](function.h).
 
 
