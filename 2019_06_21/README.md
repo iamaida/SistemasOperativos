@@ -1,6 +1,6 @@
 # 2019_06_21
 
-El dia de hoy se revisaron conceptos básicos respecto al estado en el que se puede encontrar un proceso en el Sistema Operativo: * * Waiting, Ready, Running y Done. * *
+El dia de hoy se revisaron conceptos básicos respecto al estado en el que se puede encontrar un proceso en el Sistema Operativo: *Waiting, Ready, Running y Done.*
 
 Se revisó el comando `process-run.py` que es un aplicativo provisto por el autor del texto guía del libro.
 
