@@ -1,6 +1,6 @@
 /*
  * Asignatura: SISTEMAS OPERATIVOS
- * Archivo: punto6.c
+ * Archivo: punto7.c
  * Fecha de creacion: 26-Junio-2019
  * Fecha ultima modificacion: 26-Junio-2019
  * Modificación: Juan Gonzales - Victor Vargas - Aida Mina  
@@ -45,13 +45,13 @@ void myfork(pid_t value, pid_t cpid)
 	
 		//Proceso hijo
 		printf("%d: Soy el proceso hijo\n", (int)getpid());
-		close(STDOUT_FILENO);
+		close(STDOUT_FILENO);//Cerrar flujo de salida estandar
 		printf("%d: Buenos dias\n", (int)getpid());
 		
 	}else
 	{
 		//Proceso padre
-		cpid = wait(NULL);
+		cpid = wait(NULL);//Esperar a que el proceso hijo termine
 		printf("%d: Soy el proceso padre, el pid de mi hijo es %d\n", (int)getpid(), (int)cpid);
 		
 	}
